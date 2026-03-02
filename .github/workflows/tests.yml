@@ -28,4 +28,4 @@ jobs:
           cd build
           cmake ..
           make
-          ./src/calculator add 10 5
+          ./build/calculator add 10 5
