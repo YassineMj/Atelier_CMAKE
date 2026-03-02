@@ -1,13 +1,18 @@
+cmake_minimum_required(VERSION 3.16)
+
+project(calculator C)
+
+enable_testing()
+
 add_executable(calculator
-    main.c
-    lib/calculator.c
+    src/main.c
+    src/lib/calculator.c
 )
 
 target_include_directories(calculator PRIVATE
-    ${CMAKE_SOURCE_DIR}/include
+    include
 )
 
-# Tests
 add_test(NAME t1 COMMAND calculator add 2 3)
 add_test(NAME t2 COMMAND calculator sub 3 -2)
 add_test(NAME t3 COMMAND calculator mul 5 5)

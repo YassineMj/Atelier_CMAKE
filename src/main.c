@@ -31,9 +31,6 @@ int main(int argc, char *argv[]) {
 			else if (strcmp(op, "div") == 0) {
 				r = _div(atof(a), atof(b));
 			}
-			else if (strcmp(op, "car") == 0){
-				r = _car(atof(a));
-			}
 			else {
 				printf("Erreur de parametres");
 				return 1;
